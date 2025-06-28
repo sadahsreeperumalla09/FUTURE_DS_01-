@@ -1,0 +1,8 @@
+-- Profit per Order
+Profit = Sales[Revenue] - Sales[Cost]
+
+-- Full Date Key
+DateKey = FORMAT(Sales[OrderDate], "YYYYMMDD")
+
+-- Product Full Name
+Product Full Name = Sales[ProductName] & " - " & Sales[Subcategory]
