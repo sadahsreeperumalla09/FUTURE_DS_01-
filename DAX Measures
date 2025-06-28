@@ -1,0 +1,26 @@
+-- Total Sales
+Total Sales = SUM(Sales[Revenue])
+
+-- Total Quantity Sold
+Total Quantity = SUM(Sales[Quantity])
+
+-- Total Orders
+Total Orders = DISTINCTCOUNT(Sales[OrderID])
+
+-- Average Order Value
+Average Order Value = DIVIDE([Total Sales], [Total Orders])
+
+-- Total Profit
+Total Profit = SUM(Sales[Revenue]) - SUM(Sales[Cost])
+
+-- Profit Margin
+Profit Margin = DIVIDE([Total Profit], [Total Sales])
+
+-- Year
+Year = YEAR(Sales[OrderDate])
+
+-- Month Name
+Month Name = FORMAT(Sales[OrderDate], "MMMM")
+
+-- Year-Month (for trend lines)
+YearMonth = FORMAT(Sales[OrderDate], "YYYY-MM")
