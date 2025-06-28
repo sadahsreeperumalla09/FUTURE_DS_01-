@@ -1,0 +1,5 @@
+| OrderID | OrderDate  | ProductID | ProductName | Category    | Subcategory | Quantity | Revenue | Cost | CustomerID | Region |
+| ------- | ---------- | --------- | ----------- | ----------- | ----------- | -------- | ------- | ---- | ---------- | ------ |
+| 1001    | 2024-01-10 | P001      | Laptop A    | Electronics | Laptops     | 1        | 1000    | 800  | C001       | East   |
+| 1002    | 2024-01-12 | P002      | Phone B     | Electronics | Phones      | 2        | 1200    | 900  | C002       | West   |
+| 1003    | 2024-02-01 | P003      | Shirt C     | Apparel     | Shirts      | 3        | 90      | 45   | C003       | North  |
