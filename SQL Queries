@@ -1,0 +1,32 @@
+#Top 10 Best-Selling Products
+SELECT TOP 10 
+    ProductName, 
+    SUM(Revenue) AS TotalRevenue,
+    SUM(Quantity) AS UnitsSold
+FROM Sales
+GROUP BY ProductName
+ORDER BY TotalRevenue DESC;
+
+#Monthly Sales Trend
+SELECT 
+    FORMAT(OrderDate, 'yyyy-MM') AS Month,
+    SUM(Revenue) AS TotalRevenue
+FROM Sales
+GROUP BY FORMAT(OrderDate, 'yyyy-MM')
+ORDER BY Month;
+
+#Category Performance
+SELECT 
+    Category, 
+    SUM(Revenue) AS TotalRevenue, 
+    SUM(Profit) AS TotalProfit
+FROM Sales
+GROUP BY Category
+ORDER BY TotalRevenue DESC;
+
+#Sales by Region
+SELECT 
+    Region, 
+    SUM(Revenue) AS TotalSales
+FROM Sales
+GROUP BY Region;
